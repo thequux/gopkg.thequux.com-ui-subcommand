@@ -63,7 +63,7 @@ func Main() {
 
 	submod := Subcommand(flag.Arg(0))
 	if submod == nil {
-		fmt.Printf("%s %s: subcommand not found\n", os.Arg(0), flag.Arg(0))
+		fmt.Printf("%s %s: subcommand not found\n", os.Args[0], flag.Arg(0))
 		flag.Usage()
 		return
 	}
